@@ -6,5 +6,6 @@
     <string name="menu_score_card">Scorecard</string>
     <string name="menu_commentary">Commentary</string>
     <string name="menu_match_info">Match Info</string>
+    <string name="players_title">Players</string>
 
 </resources>

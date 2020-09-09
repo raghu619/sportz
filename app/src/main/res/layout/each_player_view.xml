@@ -2,7 +2,8 @@
 
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    >
 
     <data>
 
@@ -20,6 +21,11 @@
         <com.google.android.material.card.MaterialCardView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_1dp"
+            android:layout_marginBottom="@dimen/size_1dp"
+            android:layout_marginRight="@dimen/size_2dp"
+            android:layout_marginLeft="@dimen/size_2dp"
+            app:cardBackgroundColor="@color/cardview_light_background"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -33,19 +39,23 @@
                 >
 
 
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/textView"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:gravity="center|start"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.023"
-            app:formattedPlayer="@{property}"
-            tools:text="raghvendra rao koduri" />
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textView"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/averia_sans_libre_bold_italic"
+                    android:gravity="center|start"
+                    android:paddingLeft="@dimen/size_16dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    app:formattedPlayer="@{property}"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.023"
+                    tools:text="raghvendra rao koduri" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </com.google.android.material.card.MaterialCardView>

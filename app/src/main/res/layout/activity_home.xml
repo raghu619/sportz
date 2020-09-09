@@ -24,6 +24,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 app:title="India vs AUS"
+                app:titleMarginStart="100dp"
                 style="@style/Widget.MaterialComponents.Toolbar.Primary"
                 />
 
@@ -33,14 +34,12 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="50dp"
-
+            android:layout_marginTop="?attr/actionBarSize"
             >
-
 
             <com.google.android.material.tabs.TabLayout
                 android:id="@+id/tabLayout"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:tabBackground="@color/primaryColor"

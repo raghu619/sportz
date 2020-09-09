@@ -26,6 +26,7 @@ class HomeActivity : AppCompatActivity() {
         binding.setLifecycleOwner(this)
         val tabLayout = binding.tabLayout
         val viewPager = binding.viewPager
+        val toolbarLayout = binding.topAppBar
         viewModel.playersList.observe(this, Observer { results ->
             results?.apply {
                 if (results.size > 0) {
@@ -34,6 +35,7 @@ class HomeActivity : AppCompatActivity() {
                     val adapter = ViewPagerAdapter(supportFragmentManager)
                     adapter.addFragment(PlayersFragment.newInstance(teamAList), teamAList.get(0).teamName)
                     adapter.addFragment(PlayersFragment.newInstance(teamBList), teamBList.get(0).teamName)
+                    toolbarLayout.title = teamAList.get(0).teamName.toUpperCase() +" VS " +teamBList.get(0).teamName.toUpperCase()
                     viewPager.adapter =adapter
                     tabLayout.setupWithViewPager(viewPager)
                 }
