@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menu_summary"
+        android:title="@string/menu_summary"
+        android:icon="@drawable/summary_vector_icon"
+        />
+    <item android:id="@+id/menu_score_card"
+        android:title="@string/menu_score_card"
+        android:icon="@drawable/score_vector_icon"
+        />
+    <item android:id="@+id/menu_commentary"
+        android:title="@string/menu_commentary"
+        android:icon="@drawable/mic_vector_icon"
+        />
+    <item android:id="@+id/menu_match_info"
+        android:title="@string/menu_match_info"
+        android:icon="@drawable/info_vector_icon"
+        />
+
+
+</menu>

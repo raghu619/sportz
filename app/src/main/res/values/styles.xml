@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorButtonNormal">@color/primaryDarkColor</item>
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorError">#F44336</item>
+        <item name="colorSecondaryVariant">#0039CB</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="colorOnError">#FFFFFF</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorOnSurface">#212121</item>
+
+    </style>
+
+</resources>
