@@ -18,14 +18,19 @@ class HomeActivityViewModel(application: Application) :
 
     init {
 
-        coroutineScope.launch {
-            playersDataRespository.refreshData()
-        }
+         refreshData()
 
     }
 
     val playersList = playersDataRespository.players
 
+
+    fun  refreshData(){
+        coroutineScope.launch {
+            playersDataRespository.refreshData()
+        }
+
+    }
 
     fun getTeamAPlayers(list: List<EachPlayer>): List<EachPlayer> {
         if (list.size > 0) {

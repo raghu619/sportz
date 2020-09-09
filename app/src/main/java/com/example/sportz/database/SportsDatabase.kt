@@ -22,7 +22,7 @@ fun getDatabase(context: Context): SportsDatabase {
             INSTANCE = Room.databaseBuilder(
                 context.applicationContext,
                 SportsDatabase::class.java,
-                "videos"
+                "sports"
             ).build()
         }
     }

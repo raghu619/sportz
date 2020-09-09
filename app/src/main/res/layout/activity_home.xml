@@ -23,8 +23,8 @@
                 android:id="@+id/topAppBar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                app:title="India vs AUS"
-                app:titleMarginStart="100dp"
+
+                app:titleMarginStart="@dimen/size_100dp"
                 style="@style/Widget.MaterialComponents.Toolbar.Primary"
                 />
 
