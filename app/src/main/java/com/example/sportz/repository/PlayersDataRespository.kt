@@ -47,7 +47,7 @@ class PlayersDataRespository(private val database: SportsDatabase) {
         val playersList = ArrayList<PlayerData>()
         for ((key, value) in networkResults.teams) {
             val teamModel: TeamModel = value
-            val teamName = value.fullName
+            val teamName = teamModel.fullName
             for ((key, value) in teamModel.players) {
                 val player: EachPlayer = value
                 playersList.add(
