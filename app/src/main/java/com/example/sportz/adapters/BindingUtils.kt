@@ -1,7 +1,6 @@
 package com.example.sportz.adapters
 
 
-
 import android.widget.TextView
 import androidx.databinding.BindingAdapter
 import com.example.sportz.domain.EachPlayer
@@ -11,14 +10,15 @@ import com.example.sportz.domain.EachPlayer
 fun TextView.setSleepDurationFormatted(item: EachPlayer?) {
     item?.let {
 
-         when{
+        when {
 
-             item.isKeeper -> text = item.fullName +" "+ "(keeper)"
-             item.isCaptain ->text = item.fullName +" "+ "(captain)"
-             else -> text =item.fullName
+            (item.isCaptain && item.isKeeper) -> text =
+                item.fullName + " " + "(keeper" + " + " + "captain)"
+            item.isKeeper -> text = item.fullName + " " + "(keeper)"
+            item.isCaptain -> text = item.fullName + " " + "(captain)"
+            else -> text = item.fullName
 
-         }
-
+        }
 
 
     }

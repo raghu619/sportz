@@ -28,7 +28,7 @@ class HomeActivity : AppCompatActivity() {
         val tabLayout = binding.tabLayout
         val viewPager = binding.viewPager
         val toolbarLayout = binding.topAppBar
-
+        viewModel.refreshData()
         viewModel.playersList.observe(this, Observer { results ->
             results?.apply {
                 if (results.size > 0) {

@@ -14,5 +14,8 @@ interface SportDatabaseDao {
     @Query("SELECT * FROM players_info")
     fun getPlayersInfo(): LiveData<List<PlayerData>>
 
+    @Query("DELETE FROM players_info")
+    fun deleteAll()
+
 
 }

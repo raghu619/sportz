@@ -16,11 +16,11 @@ class HomeActivityViewModel(application: Application) :
     private val database = getDatabase(application)
     private val playersDataRespository = PlayersDataRespository(database)
 
-    init {
-
-         refreshData()
-
-    }
+//    init {
+//
+//         refreshData()
+//
+//    }
 
     val playersList = playersDataRespository.players
 
