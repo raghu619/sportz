@@ -32,6 +32,9 @@ interface SportZApiService{
     @GET("nzin01312019187360.json")
     fun getTeamsDetails() : Deferred<SportsModel>
 
+//   @GET("sapk01222019186652.json")
+//    fun getTeamsDetails() : Deferred<SportsModel>
+
 }
 
 object SportZApi {
